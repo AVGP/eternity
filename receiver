@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo
+echo Take a look into ETERNITY
+echo
+
+echo "Extracting..."
+mkdir -p /var/repos/$1 && cat | tar -x -C /var/repos/$1
+
+echo
+echo "Installing dependencies"
+echo
+
+source ~/.nvm/nvm.sh && nvm use 0.10
+cd /var/repos/$1
+npm install
+
+echo
+echo "(Re)starting the server"
+echo
+
+node /home/git/eternity/eternity.js --repoPath /var/repos/$1
+
+echo
+echo "Done"
+echo
+
