@@ -13,7 +13,7 @@ Enjoy!
 #Simple setup (recommended)
 In a terminal with root access, run
 ```
-curl https://raw.github.com/avgp/eternity/bootstrap.sh | bash
+curl https://raw.github.com/AVGP/eternity/master/bootstrap.sh | bash
 ```
 
 # Manual setup
