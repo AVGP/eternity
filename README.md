@@ -11,6 +11,10 @@ Very simple, git-based Node.js deployment based on GitReceive and Forever
 Enjoy!
 
 #Simple setup (recommended)
+In a terminal with root access, run
+```
+curl https://raw.github.com/avgp/eternity/bootstrap.sh | bash
+```
 
 # Manual setup
 First, you need to install [GitReceive](https://github.com/progrium/gitreceive).
@@ -29,4 +33,4 @@ Users need to copy their public key to the server:
 $ cat ~/.ssh/id_rsa.pub | ssh you@yourserver.com "sudo gitreceive upload-key <username>"
 ```
 
-Clone this repository into ``/home/git``.
+Clone this repository into ``/home/git`` and run ``npm install`.
