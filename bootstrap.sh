@@ -4,7 +4,9 @@ echo
 echo "Installing Gitreceive"
 echo
 
-git clone https://github.com/progrium/gitreceive /usr/local/bin/gitreceive
+cd /usr/local/bin
+wget https://raw.github.com/progrium/gitreceive/master/gitreceive
+chmod +x gitreceive
 /usr/local/bin/gitreceive init
 
 echo
