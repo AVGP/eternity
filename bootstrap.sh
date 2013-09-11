@@ -5,7 +5,7 @@ echo "Installing Gitreceive"
 echo
 
 git clone https://github.com/progrium/gitreceive /usr/local/bin/gitreceive
-gitreceive init
+/usr/local/bin/gitreceive init
 
 echo
 echo "Installing Eternity"
