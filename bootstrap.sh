@@ -15,8 +15,8 @@ echo
 
 cd /home/git
 git clone https://github.com/AVGP/eternity.git
-cd eternity && npm install
-chown -R git:git eternity
+cd eternity && npm install && cp receiver /home/git/receiver
+chown -R git:git /home/git/eternity
 
 echo
 echo "Setting up paths..."
